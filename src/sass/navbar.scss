@@ -1,0 +1,50 @@
+.navbar_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+  background-color: white;
+  .logo_container {
+    width: 100px;
+    .logo {
+      display: block;
+      width: 100px;
+      height: 68px;
+    }
+  }
+
+  .panel {
+    width: 240px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    @media (width < 340px) {
+      width: 224px;
+    }
+    @media (width < 340px) {
+      width: 180px;
+    }
+
+    h3 {
+      cursor: pointer;
+    }
+    .active_nav {
+      background-color: rgb(79, 70, 229);
+      color: white;
+      width: max-content;
+      text-align: center;
+      height: 30px;
+      border-radius: 5px;
+      padding: 1px 12px 3px 12px;
+      transition: all 0.5s;
+    }
+  }
+}

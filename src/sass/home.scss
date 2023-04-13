@@ -1,0 +1,35 @@
+.home_wrapper {
+  background-color: rgb(229, 233, 249);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  .input {
+    width: 30vw;
+    height: 32px;
+
+    margin-top: 10px;
+    caret-color: black;
+    border-image: linear-gradient(to right, green, yellow) 1;
+  }
+  input::placeholder {
+    color: linear-gradient(to right, green, yellow) 1;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+  .home_data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    .card_home {
+      // border: solid;
+      height: 400px;
+    }
+  }
+}

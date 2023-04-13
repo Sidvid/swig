@@ -1,0 +1,13 @@
+.error_wrapper {
+    
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
